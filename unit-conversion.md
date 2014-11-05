@@ -1,6 +1,6 @@
-## Currency Format
+## Unit Conversion
 
-`{EUR: 1000.00}` ⟹ €1,000.00
+`{amount:1,unit:"mile"}` ⟹ `{amount:1.609,unit:"kilometer"}`
 
 | | ECMA-402<br><sub><sup>Native</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | iLib |
 | --- | --- | --- |
