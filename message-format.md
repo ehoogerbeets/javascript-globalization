@@ -9,6 +9,7 @@ You have {count, plural,
 
 | | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | iLib |
 | --- | --- | --- |
-| | | :heavy_check_mark:<br><sub><sup>but with different syntax</sup></sub> |
+| Template substitution | | :heavy_check_mark:<br><sub><sup>but with different syntax</sup></sub> |
+| Slavic Plurals | | :heavy_check_mark: |
 
 [jquery/globalize]: https://github.com/jquery/globalize/

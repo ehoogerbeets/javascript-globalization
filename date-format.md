@@ -13,5 +13,6 @@
 | Time Zone Support | | | :heavy_check_mark: |
 | Julian Day/Extended Unixtime Support | | | :heavy_check_mark: |
 | Native Digits Support | | | :heavy_check_mark: |
+| Different Month Names When Used Stand-alone vs. Integrated (eg. in Finnish) | | | |
 
 [jquery/globalize]: https://github.com/jquery/globalize/

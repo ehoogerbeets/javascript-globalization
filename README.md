@@ -161,6 +161,7 @@ Links:
 | [Charset Mapping][]<br><sub><sup>Shift-JIS -> Unicode</sup></sub> | | | | | | :soon: |
 | &nbsp; | | | | | |
 | [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> | | :heavy_check_mark: | :heavy_check_mark: |
+| [Resource Bundle][]<br><sub><sup>`getString(id)` ⟹ "resource string"</sup></sub> | | | | | | :heavy_check_mark: |
 | [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Via&nbsp;[intl-messageformat](https://github.com/yahoo/intl-messageformat)</sup></sub> | :heavy_check_mark: |
 | [Unicode Normalization Algorithm] | | | | | | :heavy_check_mark: |
 | [Code Point Support] | | | | | | :heavy_check_mark: |
@@ -222,3 +223,4 @@ Links:
 [Phone Number Normalization]: ./phone-number-normalization.md
 [Phone Number Geolocation]: ./phone-number-geolocation.md
 [Collation]: ./collation.md
+[Resource Bundle]: ./resource-bundle.md

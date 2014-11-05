@@ -7,5 +7,6 @@
 | --- | --- | --- | --- |
 | Regular normalization | | | :heavy_check_mark: |
 | Verizon Assisted Dialing | | | :heavy_check_mark: |
+| SMS Numbers | | | :heavy_check_mark: |
 
 [jquery/globalize]: https://github.com/jquery/globalize/
