@@ -121,10 +121,11 @@ Weaknesses:
 Links:
 - http://sourceforge.net/projects/i18nlib/
 - http://demo.jedlsoft.com/
+- http://docs.jedlsoft.com/ilib/jsdoc/
 
 ## Grid
 
-| &nbsp; | ECMA-402<br><sub><sup>Native</sup></sub> | Cldrpluralruleparser<br><sub><sup>[santhoshtr/cldrpluralruleparser][]</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | Messageformat.js<br><sub><sup>[slexaxton/messageformat.js][]</sup></sub> | FormatJS<br><sub><sup>[formatjs.io][]</sup></sub> | iLib |
+| &nbsp; | ECMA-402<br><sub><sup>Native</sup></sub> | Cldrpluralruleparser<br><sub><sup>[santhoshtr/cldrpluralruleparser][]</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | Messageformat.js<br><sub><sup>[slexaxton/messageformat.js][]</sup></sub> | FormatJS<br><sub><sup>[formatjs.io][]</sup></sub> | iLib<br><sub><sup>[ilib][]</sup></sub> |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Functionality** | | | | | | |
 | &nbsp; | | | | | | |
@@ -152,8 +153,8 @@ Links:
 | [Address Parse][]<br><sub><sup>1,234.56 feet</sup></sub> | | | | | | :heavy_check_mark: |
 | [Address Format][]<br><sub><sup>1,234.56 feet</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Phone Number Parse][]<br><sub><sup>1 (650) 555-1212 -> {trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"}</sup></sub> | | | | | | :heavy_check_mark: |
-| [Phone Number Format][]<br><sub><sup>{trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"} -> 1 (650) 555-1212</sup></sub> | | | | | | :heavy_check_mark: |
+| [Phone Number Parse][]<br><sub><sup>1 (650) 555-1212 -> {trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"}</sup></sub> | | | | | | :heavy_check_mark:<br><sub><sup>20 locales</sup></sub> |
+| [Phone Number Format][]<br><sub><sup>{trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"} -> 1 (650) 555-1212</sup></sub> | | | | | | :heavy_check_mark:<br><sub><sup>20 locales</sup></sub> |
 | [Phone Number Normalization][]<br><sub><sup>{subscriberNumber:"5551212"} -> `{iddCode:"+",trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"}` | | | | | | :heavy_check_mark: |
 | [Phone Number Geolocation][]<br><sub><sup>{areaCode: "650",subscriberNumber:"5551212"} -> " | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
@@ -169,17 +170,16 @@ Links:
 | &nbsp; | | | | | | |
 | Template integration | | | | | Handlebars<br>React<br>Dust | |
 | &nbsp; | | | | | | |
-| Collation | :heavy_check_mark: | | | | | :heavy_check_mark:<br><sub><sup>limited locales so far</sup></sub> |
-| Sort key | | | | | | :heavy_check_mark:<br><sub><sup>limited locales so far</sup></sub> |
+| [Collation] | :heavy_check_mark: | | | | | :heavy_check_mark:<br><sub><sup>limited locales so far</sup></sub> |
 | &nbsp; | | | | | |
 | **I18n data** | Compiled | | [CLDR][] >= 25 | | [CLDR][] | Compiled or Dynamic load.<br>CLDR 22.1 |
 | &nbsp; | | | | | | |
 | **Support** | | | | | |
 | &nbsp; | | | | | | |
 | Environments | Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | ES6<br>CommonJS<br>Globals |
-| Node.js | >= 0.12<br><sub><sup>`en` only by default</sup></sub> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Browser | Chrome: 24<br>Firefox: 29<br>Safari: N/A<br>Opera: 15<br>IE: 11<br><sub><sup>Reference MDN.</sup></sub> | | Chrome: <sub><sup>(Current - 1) or Current</sup></sub><br>Firefox: <sub><sup>(Current - 1) or Current</sup></sub><br>Safari: 5.1+<br>Opera: 12.1x, <sub><sup>(Current - 1) or Current</sup></sub><br>IE: 8 <sub><sup>(needs ES5 polyfill)</sup></sub>, IE9+ | | All ES3+ including IE6 |
-| Mobile | | | iOS: 6.1+<br>Android: 2.3, 4.0+ | | :heavy_check_mark: |
+| Node.js | >= 0.12<br><sub><sup>`en` only by default</sup></sub> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Browser | Chrome: 24<br>Firefox: 29<br>Safari: N/A<br>Opera: 15<br>IE: 11<br><sub><sup>Reference MDN.</sup></sub> | | Chrome: <sub><sup>(Current - 1) or Current</sup></sub><br>Firefox: <sub><sup>(Current - 1) or Current</sup></sub><br>Safari: 5.1+<br>Opera: 12.1x, <sub><sup>(Current - 1) or Current</sup></sub><br>IE: 8 <sub><sup>(needs ES5 polyfill)</sup></sub>, IE9+ | | All ES3+ including IE6 | Chrome: 20+<br>Firefox: 25<br>Safari: 5.1+<br>IE: 9+ |
+| Mobile | | | iOS: 6.1+<br>Android: 2.3, 4.0+ | | :heavy_check_mark: | :heavy_check_mark: |
 
 [andyearnshaw/intl.js]: https://github.com/andyearnshaw/Intl.js/
 [CLDR]: http://cldr.unicode.org/index/cldr-spec/json
@@ -188,6 +188,7 @@ Links:
 [santhoshtr/cldrpluralruleparser]: https://github.com/santhoshtr/CLDRPluralRuleParser/
 [slexaxton/messageformat.js]: https://github.com/SlexAxton/messageformat.js/
 [formatjs.io]: http://formatjs.io/
+[ilib]: http://sourceforge.net/projects/i18nlib/
 
 [Date Format]: ./date-format.md
 [Date Parse]: ./date-parse.md
@@ -220,3 +221,4 @@ Links:
 [Unicode Character Properties]: ./unicode-character-properties.md
 [Phone Number Normalization]: ./phone-number-normalization.md
 [Phone Number Geolocation]: ./phone-number-geolocation.md
+[Collation]: ./collation.md
