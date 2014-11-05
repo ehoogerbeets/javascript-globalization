@@ -111,6 +111,8 @@ iLib is a library of Javascript internationalization routines implemented in pur
 Strengths:
 - Completeness. Goal is to be the "ICU" of Javascript!
 - Runs in rhino, nodejs, various browsers and webOS
+- Based on CLDR
+- Over 15,000 unit tests
 
 Weaknesses:
 - Code is large. Needs to be modularized and to support more of a jquery-style plugins.
@@ -165,7 +167,7 @@ Links:
 | [Locale-sensitive Capitalization] | | | | | | :heavy_check_mark: |
 | [Unicode Character Properties] | | | | | :heavy_check_mark:<br><sub><sup>(via the CType functions)</sup></sub> |
 | &nbsp; | | | | | | |
-| Template integration | | | | | Handlebars<br>React<br>Dust |
+| Template integration | | | | | Handlebars<br>React<br>Dust | |
 | &nbsp; | | | | | | |
 | Collation | :heavy_check_mark: | | | | | :heavy_check_mark:<br><sub><sup>limited locales so far</sup></sub> |
 | Sort key | | | | | | :heavy_check_mark:<br><sub><sup>limited locales so far</sup></sub> |
@@ -189,7 +191,11 @@ Links:
 
 [Date Format]: ./date-format.md
 [Date Parse]: ./date-parse.md
+[Duration Format]: ./duration-format.md
+[Date Range Format]: ./date-range-format.md
 [Relative Time Format]: ./relative-time-format.md
+[Time Zone Support]: ./time-zone-support.md
+[Multiple Calendar Support]: ./multiple-calendar-support.md
 [Number Format]: ./number-format.md
 [Number Parse]: ./number-parse.md
 [Currency Format]: ./currency-format.md
